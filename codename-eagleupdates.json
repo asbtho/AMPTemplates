@@ -1,0 +1,12 @@
+[
+    {
+        "UpdateStageName": "CEHub Repository",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceArch": "x86_64",
+        "UpdateSourceData": "https://github.com/vinibiavatti1/CEHub/blob/b929d88badb691ddcb4093d2904dfa83ac9c5cce/game/codename-eagle-multiplayer-demo-myg.zip",
+        "UpdateSourceArgs": "server.zip",
+        "UnzipUpdateSource": true,
+        "DeleteAfterExtract": true
+    }
+]
