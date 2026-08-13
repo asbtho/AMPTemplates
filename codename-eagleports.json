@@ -4,6 +4,8 @@
         "Port": 24711,
         "Ref": "MainGamePort",
         "Name": "Main Game Port",
-        "Description": ""
+        "Description": "Port used for main game traffic",
+        "IsDelayedOpen": true,
+        "Required": true
     }
 ]
