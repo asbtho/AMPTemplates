@@ -1,0 +1,16 @@
+[
+    {
+        "UpdateStageName": "Add Wine registry edits",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Bash",
+        "UpdateSourceArch": "x86_64",
+        "UpdateSourceArgs": "wine reg add 'HKEY_CURRENT_USER\\Software\\PlanetMoon\\Giants\\' /v Renderer /d gg_null.dll"
+    },
+    {
+        "UpdateStageName": "Windows add registry edit",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "CMD",
+        "UpdateSourceArch": "x86_64",
+        "UpdateSourceArgs": "reg add \"HKEY_CURRENT_USER\\Software\\PlanetMoon\\Giants\" /v Renderer /d gg_null.dll /f"
+    }
+]
