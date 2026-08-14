@@ -1,6 +1,6 @@
 [
     {
-        "Protocol": "UDP",
+        "Protocol": "Both",
         "Port": 19711,
         "Ref": "MainGamePort",
         "Name": "Main Game Port",
