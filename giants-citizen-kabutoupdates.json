@@ -1,8 +1,23 @@
 [
     {
-        "UpdateStageName": "LocalFiles",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "None",
-        "UpdateSourceArch": "x86_64"
+        "UpdateStageName": "InitWine",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Bash",
+        "UpdateSourceArch": "x86_64",
+        "UpdateSourceArgs": "xvfb-run winetricks -q vcrun2022 directplay && wineserver -w"
+    },
+    {
+        "UpdateStageName": "InitWineRegistry",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Bash",
+        "UpdateSourceArch": "x86_64",
+        "UpdateSourceArgs": "wine reg add 'HKEY_CURRENT_USER\\Software\\PlanetMoon\\Giants\\' /v Renderer /d gg_null.dll && wineserver -w"
+    },
+    {
+        "UpdateStageName": "InitRegistryWindows",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "CMD",
+        "UpdateSourceArch": "x86_64",
+        "UpdateSourceArgs": "reg add \"HKCU\\Software\\PlanetMoon\\Giants\" /v Renderer /d \"gg_null.dll\" /f"
     }
 ]
